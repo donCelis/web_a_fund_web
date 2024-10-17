@@ -1,0 +1,60 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #2d2d2d;
+  font-family: system-ui;
+}
+
+h1 {
+  color: rgb(176, 176, 176);
+}
+
+h2 {
+  color: rgb(176, 176, 176);
+}
+
+p {
+  color: white;
+}
+
+.text-orange {
+  color: tomato;
+}
+
+#header {
+  background: pink;
+}
+/* Selección por anidamiento */
+.section-texts p {
+  font-size: 2rem;
+}
+.section-texts article p {
+  color: red;
+}
+
+.text-lg {
+  font-size: 2rem;
+}
+/* Selección por agrupamiento */
+/* .titles h3,
+.titles h4,
+.titles h5 {
+  color: aqua;
+} */
+
+.title-aqua {
+  color: aqua;
+}
+
+.title-lg {
+  font-size: 2rem;
+}
+.title-md {
+  font-size: 1rem;
+}
+.title-sm {
+  font-size: 0.5rem;
+}
