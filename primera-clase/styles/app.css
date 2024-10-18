@@ -58,3 +58,42 @@ p {
 .title-sm {
   font-size: 0.5rem;
 }
+
+/* segunda clase de css */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #2d2d2d;
+  font-family: system-ui;
+  color: white;
+  padding: 200px;
+}
+button {
+  border: 0;
+}
+.box {
+  background: tomato;
+  width: 200px;
+  height: 100px;
+  margin: 24px;
+  padding: 24px;
+  border: 10px solid pink;
+}
+.box h3,
+.box p {
+  margin: 12px;
+}
+
+.btn-main {
+  font-size: 1.4rem;
+  background: black;
+  color: white;
+  /* 1: 4 lados */
+  /* 2: 1 -> y , 2 -> x */
+  /* 3: 1 -> arriba , 2 -> x, 3 -> abajo */
+  /* 4: 1 -> arriba, 2 -> derecha, 3 -> abajo, 4-> izq */
+  padding: 12px 30px;
+  border-radius: 10px;
+}
