@@ -1,7 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,500;1,500&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 body {
-  font-family: system-ui;
+  font-family: "Epilogue", system-ui;
+}
+a {
+  color: #696969;
+  text-decoration: none;
+}
+button {
+  border: 0;
+  font-family: "Epilogue", system-ui;
+}
+img {
+  vertical-align: middle;
+}
+/* estilos generales */
+.row {
+  display: flex;
+}
+.grid {
+  display: grid;
+  align-items: center;
+}
+.col-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.space-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.gap-sm {
+  gap: 1rem;
+}
+.gap-md {
+  gap: 3rem;
+}
+.gap-lg {
+  gap: 6rem;
+}
+.btn {
+  padding: 0.6rem 1.4rem;
+}
+.btn-border {
+  border: 1px solid #696969;
+  border-radius: 12px;
+}
+.w-full {
+  width: 100%;
+}
+.btn-main {
+  padding: 0.9rem 1.8rem;
+  background: black;
+  color: white;
+  border-radius: 12px;
+  font-size: 1.1em;
+}
+.my-4 {
+  margin: 4rem 0;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* estilos especif. */
+header,
+main {
+  padding: 2rem 3rem;
+}
+article h2 {
+  font-size: 5em;
+  line-height: 4.6rem;
+}
+article p {
+  color: #696969;
 }

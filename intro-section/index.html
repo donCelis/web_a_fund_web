@@ -13,30 +13,35 @@
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="row space-between">
+      <nav class="row gap-md items-center">
         <h1><img src="./images/logo.svg" alt="" /></h1>
-        <a href="#">Features</a>
-        <a href="#">Company</a>
-        <a href="#">Careers</a>
-        <a href="#">About</a>
+        <div class="row gap-md">
+          <a href="#">Features</a>
+          <a href="#">Company</a>
+          <a href="#">Careers</a>
+          <a href="#">About</a>
+        </div>
       </nav>
-      <nav>
-        <a href="#">Login</a>
-        <a href="#">Register</a>
+      <nav class="row gap-sm">
+        <a class="btn" href="#">Login</a>
+        <a class="btn btn-border" href="#">Register</a>
       </nav>
     </header>
-    <main>
-      <section>
+    <main class="container grid col-2 gap-lg">
+      <section class="grid gap-lg">
         <article>
-          <h2>Make remote work</h2>
-          <p>
+          <h2>
+            Make <br />
+            remote work
+          </h2>
+          <p class="my-4">
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
-          <button>Learn more</button>
+          <button class="btn-main">Learn more</button>
         </article>
-        <div>
+        <div class="row items-center gap-md">
           <img src="./images//client-databiz.svg" alt="" />
           <img src="./images/client-audiophile.svg" alt="" />
           <img src="./images/client-meet.svg" alt="" />
@@ -44,7 +49,7 @@
         </div>
       </section>
       <section>
-        <img src="./images/image-hero-desktop.png" alt="" />
+        <img class="w-full" src="./images/image-hero-desktop.png" alt="" />
       </section>
     </main>
   </body>
