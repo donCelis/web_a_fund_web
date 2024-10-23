@@ -5,9 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Intro Css</title>
     <link rel="stylesheet" href="./styles/app.css" />
+    <style>
+      /* .container {
+        display: flex;
+      }
+      .row {
+        height: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+      }
+      .h-20 {
+        height: 15rem;
+      } */
+      .grid {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 100px 100px;
+      }
+      .grid-item {
+        /*  width: 100px; */
+        height: 100px;
+        background: tomato;
+      }
+    </style>
   </head>
   <body>
-    <header id="header">
+    <div class="grid">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+    </div>
+    <!-- <div class="container">
+      <h1>lorem 2</h1>
+      <div>
+        <p>Lorem ipsum dolor sit.</p>
+        <p>Lorem ipsum dolor sit.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <p class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Optio,
+        aspernatur.
+      </p>
+      <p class="box h-20">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur,
+        reprehenderit.
+      </p>
+      <p class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore,
+        voluptas?
+      </p>
+    </div> -->
+    <!-- <header id="header">
       <h1>Lorem, ipsum.</h1>
     </header>
     <section class="section-texts">
@@ -36,7 +90,7 @@
       <h3 class="title-aqua title-sm">Lorem, ipsum dolor.</h3>
       <h4 class="title-aqua title-md">Lorem ipsum dolor sit.</h4>
       <h5 class="title-aqua title-lg">Lorem ipsum dolor sit amet.</h5>
-    </section>
+    </section> -->
     <!-- segunda clase de css -->
     <!-- <div class="box">
       <h3>Lorem, ipsum dolor.</h3>
@@ -46,6 +100,6 @@
       <h3>Lorem, ipsum dolor.</h3>
       <p>Lorem, ipsum dolor.</p>
     </div> -->
-    <button class="btn-main">Learn more</button>
+    <!-- <button class="btn-main">Learn more</button> -->
   </body>
 </html>
