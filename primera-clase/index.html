@@ -23,21 +23,46 @@
         display: grid;
         gap: 2rem;
         grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: 100px 100px;
+        /* grid-template-rows: 100px 100px; */
       }
       .grid-item {
-        /*  width: 100px; */
-        height: 100px;
-        background: tomato;
+        width: 200px;
+        height: 200px;
+        background: #2980b9;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+      }
+      .noti {
+        background: #e74c3c;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+      }
+      .grid-item p {
+        font-size: 4em;
       }
     </style>
   </head>
   <body>
     <div class="grid">
+      <div class="grid-item">
+        <p>A</p>
+        <div class="noti">
+          <span>3</span>
+        </div>
+      </div>
+      <!-- <div class="grid-item"></div>
       <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
-      <div class="grid-item"></div>
+      <div class="grid-item"></div> -->
     </div>
     <!-- <div class="container">
       <h1>lorem 2</h1>
