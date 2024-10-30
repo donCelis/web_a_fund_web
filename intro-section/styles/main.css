@@ -35,6 +35,9 @@ img {
 .items-center {
   align-items: center;
 }
+.gap-xs {
+  gap: 0.5rem;
+}
 .gap-sm {
   gap: 1rem;
 }
@@ -46,20 +49,38 @@ img {
 }
 .btn {
   padding: 0.6rem 1.4rem;
+  transition: 200ms ease-in-out;
+  transition-property: color;
+}
+.btn:hover {
+  color: black;
 }
 .btn-border {
   border: 1px solid #696969;
   border-radius: 12px;
+  transition-property: color, border;
+}
+.btn-border:hover {
+  border: 1px solid black;
 }
 .w-full {
   width: 100%;
 }
 .btn-main {
-  padding: 0.9rem 1.8rem;
   background: black;
   color: white;
+  border: 1px solid transparent;
+  padding: 0.9rem 1.8rem;
   border-radius: 12px;
   font-size: 1.1em;
+  cursor: pointer;
+  transition: 200ms background ease-in-out, 200ms color ease-in-out,
+    200ms border ease-in-out;
+}
+.btn-main:hover {
+  background: white;
+  color: black;
+  border: 1px solid black;
 }
 .my-4 {
   margin: 4rem 0;
@@ -67,6 +88,9 @@ img {
 .container {
   width: 80%;
   margin: 0 auto;
+}
+.p-relative {
+  position: relative;
 }
 /* estilos especif. */
 header,
@@ -79,4 +103,31 @@ article h2 {
 }
 article p {
   color: #696969;
+}
+.main-menu a {
+  transition: 200ms color ease-in-out;
+}
+.main-menu a:hover {
+  color: black;
+}
+.menu-card {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border-radius: 12px;
+  padding: 1.4rem 1.8rem;
+  display: none;
+  gap: 0.6rem;
+  box-shadow: 0px 0px 24px 8px rgba(0, 0, 0, 0.06);
+  width: 5.5rem;
+  text-align: center;
+  transition: 200ms display ease-in-out;
+}
+.menu-card a {
+  display: block;
+}
+.menu-active:hover + .menu-card {
+  display: grid;
 }
