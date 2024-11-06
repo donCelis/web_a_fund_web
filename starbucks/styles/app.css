@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: system-ui, -apple-system;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+img {
+  vertical-align: middle;
+}
+.img-fluid {
+  width: 100%;
+}
+.container-md {
+  width: 80%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container-lg {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+}
+.items-center {
+  align-items: center;
+}
+.space-bt {
+  justify-content: space-between;
+}
+.gap-sm {
+  gap: 1rem;
+}
+.gap-md {
+  gap: 2rem;
+}
+.gap-lg {
+  gap: 4rem;
+}
+.py-sm {
+  padding: 1.25rem 0;
+}
+.py-md {
+  padding: 3rem 0;
+}
+.py-lg {
+  padding: 5rem 0;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.btn {
+  padding: 0.4rem 1rem;
+  border-radius: 1rem;
+}
+.btn-main {
+  background: black;
+  color: white;
+}
+.btn-secondary {
+  border: 1px solid black;
+}
+.shadow-down {
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.shadow-up {
+  box-shadow: 0px -3px 3px 0px rgba(0, 0, 0, 0.1);
+}
+.bg-green {
+  background: #1e3932;
+}
+.bg-blue {
+  background: #0044b4;
+}
+.bg-red {
+  background: #d50032;
+}
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+.card:nth-child(even) img {
+  order: 2;
+}
+.card:nth-child(even) .card-content {
+  order: 1;
+}
+.card-content {
+  color: white;
+  text-align: center;
+  display: grid;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+.card-content h2 {
+  font-size: 1.875em;
+}
+.card-content p {
+  font-size: 1.1875em;
+}
+main section {
+  display: grid;
+  gap: 2rem;
+}
