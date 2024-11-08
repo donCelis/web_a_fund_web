@@ -12,6 +12,10 @@ a {
 img {
   vertical-align: middle;
 }
+
+button {
+  cursor: pointer;
+}
 .img-fluid {
   width: 100%;
 }
@@ -27,6 +31,12 @@ img {
 }
 .d-flex {
   display: flex;
+}
+.d-grid {
+  display: grid;
+}
+.cols-2 {
+  grid-template-columns: repeat(2, 1fr);
 }
 .items-center {
   align-items: center;
@@ -55,12 +65,16 @@ img {
 .capitalize {
   text-transform: capitalize;
 }
+.text-center {
+  text-align: center;
+}
 .uppercase {
   text-transform: uppercase;
 }
 .btn {
   padding: 0.4rem 1rem;
   border-radius: 1rem;
+  background: transparent;
 }
 .btn-main {
   background: black;
@@ -83,6 +97,12 @@ img {
 }
 .bg-red {
   background: #d50032;
+}
+.bg-sky-blue {
+  background: #98cde4;
+}
+.bg-cherry-blossom {
+  background: #f6bfd9;
 }
 .card {
   display: grid;
@@ -108,7 +128,15 @@ img {
 .card-content p {
   font-size: 1.1875em;
 }
+.card-v {
+  padding: 3rem 0 1.5rem;
+}
 main section {
   display: grid;
   gap: 2rem;
+}
+
+.promos .btn {
+  border: 1px solid black;
+  margin-top: 1rem;
 }
