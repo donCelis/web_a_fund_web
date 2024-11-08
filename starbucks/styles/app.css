@@ -156,7 +156,47 @@ header {
 .menu-links a {
   padding: 0 1.4rem;
   border-right: 1px solid black;
+  text-align: center;
 }
 .menu-links a:last-child {
   border-right: none;
+}
+.icon-menu {
+  display: none;
+}
+
+@media screen and (width <= 768px) {
+  .card {
+    grid-template-columns: 1fr;
+  }
+  .card-content {
+    padding: 3rem 2rem;
+  }
+  .container-md {
+    width: 90%;
+  }
+  .container-lg {
+    width: 100%;
+  }
+  .card:nth-child(even) img {
+    order: 1;
+  }
+  .card:nth-child(even) .card-content {
+    order: 2;
+  }
+  .promos {
+    grid-template-columns: 1fr;
+  }
+  .menu-footer {
+    flex-direction: column;
+  }
+  .menu-links {
+    flex-wrap: wrap;
+  }
+  .d-none {
+    display: none;
+  }
+  .icon-menu {
+    display: block;
+  }
 }
