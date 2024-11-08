@@ -12,9 +12,11 @@ a {
 img {
   vertical-align: middle;
 }
-
 button {
   cursor: pointer;
+}
+hr {
+  border-color: rgba(0, 0, 0, 0.05);
 }
 .img-fluid {
   width: 100%;
@@ -41,8 +43,14 @@ button {
 .items-center {
   align-items: center;
 }
+.items-start {
+  align-items: flex-start;
+}
 .space-bt {
   justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
 }
 .gap-sm {
   gap: 1rem;
@@ -139,4 +147,11 @@ main section {
 .promos .btn {
   border: 1px solid black;
   margin-top: 1rem;
+}
+.menu-links a {
+  padding: 0 1.4rem;
+  border-right: 1px solid black;
+}
+.menu-links a:last-child {
+  border-right: none;
 }
